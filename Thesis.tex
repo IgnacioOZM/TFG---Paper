@@ -1,0 +1,66 @@
+\documentclass [11pt,a4paper,twoside,english,spanish]{bmpthesis}
+\addbibresource{References.bib}
+
+\Author{Ignacio Ortiz de Zúñiga Mingot}
+\Date{Junio de 2020}
+\Degree{Grado en Ingeniería en Tecnologías Industriales}
+\Keywords{dsads}
+\Subject{Trabajo Fin de Grado}
+\Supervisors{Jaime Boal Martín-Larrauri,José Antonio Rodríguez Mondéjar}
+\Title{Optimización del sistema de visión artificial de un robot industrial para una aplicación de pick and place}
+\Footer{Optimización del sistema de visión artificial de un robot industrial}
+
+\begin{document}
+
+\frontmatter
+\Frontcover
+
+\includepdf{anexo2.pdf}
+\includepdf{anexo3.pdf}
+
+\frontmatter
+\Frontcover
+
+\Dedication{Para todos los que me habéis soportado \\ durante estos largos años de carrera}
+\input{Acknowledgment.tex}
+
+\TableOfContents
+\ListOfFigures
+\ListOfTables
+%\ListOfAlgorithms
+%\Acronyms
+
+\input{Resumen.tex}
+
+\selectlanguage{english}
+\input{Abstract.tex}
+\selectlanguage{spanish}
+
+\mainmatter
+  \input{Introducción.tex}
+  \input{Estado del arte.tex}
+  \input{Segmentacion con mascaras de color.tex}
+  \input{Clasificacion con redes neuronales.tex}
+  \input{Segmentacion con redes neuronales.tex}
+  \input{Extraccion de atributos.tex}
+  \input{Resultados.tex}
+  \input{Conclusiones.tex}
+  \input{Futuros desarrollos.tex}
+
+
+\appendix  % All chapters below this point will be treated as appendices
+  \input{Comunicacion con la camara.tex}
+  \input{Interfaz grafica de usuario.tex}
+  \input{OBS.tex}  
+  
+\backmatter 
+  \begingroup
+    \setlength\bibitemsep{7pt plus 2pt minus 2pt}
+    \phantomsection 
+    \addcontentsline{toc}{chapter}{Bibliografía} 
+    \printbibliography[title = {Bibliografía}]
+  \endgroup
+  
+  \Blankpage
+
+\end{document}
